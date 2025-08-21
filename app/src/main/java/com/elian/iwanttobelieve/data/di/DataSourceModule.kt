@@ -30,4 +30,13 @@ object DataSourceModule {
     ): UserRemoteDataSource {
         return UserRemoteDataSource(firestore, storage)
     }
+
+    @Provides
+    @Singleton
+    fun providePostRemoteDataSource(
+        firestore: FirebaseFirestore,
+        storage: FirebaseStorage
+    ): PostRemoteDataSource {
+        return PostRemoteDataSource(firestore, storage)
+    }
 }
