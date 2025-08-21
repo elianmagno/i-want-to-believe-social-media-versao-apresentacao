@@ -23,4 +23,14 @@ object RepositoryModule {
     ): UserRepository {
         return UserRepository(authDataSource, remoteDataSource)
     }
+
+    @Provides
+    @Singleton
+    fun providePostRepository(
+        postDataSource: PostRemoteDataSource,
+        authDataSource: UserAuthDataSource,
+        userDataSource: UserRemoteDataSource
+    ): PostRepository {
+        return PostRepository(postDataSource, authDataSource, userDataSource)
+    }
 }
