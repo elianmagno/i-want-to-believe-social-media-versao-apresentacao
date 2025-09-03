@@ -1,0 +1,1 @@
+-keep,allowobfuscation,allowshrinking class com.elian.iwanttobelieve.ui.screens.update.UpdateViewModel

@@ -1,0 +1,1 @@
+-keep,allowobfuscation,allowshrinking class com.elian.iwanttobelieve.ui.screens.feed.FeedViewModel
